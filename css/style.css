@@ -1,0 +1,474 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,400,700");
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato';
+}
+
+header {
+  position: relative;
+  height: 880px;
+  background-image: url(../img/header_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+header .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1180px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+header .nav .logo {
+  background-image: url(../img/logo1.png);
+  width: 68px;
+  height: 57px;
+  margin-top: 21px;
+  background-position: center;
+}
+
+header .nav .reg {
+  margin-top: 50px;
+}
+
+header .nav .reg .reg_list {
+  display: flex;
+  flex-direction: row;
+  Justify-content: space-between;
+  width: 180px;
+}
+
+header .nav .reg .reg_list .reg_links {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+
+header .nav .reg .reg_list .reg_links:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+header .nav .reg .reg_list .reg_links:hover {
+  color: #ffffff;
+}
+
+header .nav .reg .reg_list .reg_links:hover:before {
+  visibility: visible;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+header .nav .navButton {
+  display: inline-block;
+  background-image: url(../img/menu.png);
+  width: 14px;
+  height: 10px;
+}
+
+header .header_text {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 274px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1180px;
+}
+
+header .header_text h2 {
+  font-size: 36px;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+header .header_text h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  font-family: Lato;
+}
+
+header .header_text .button {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+header .header_text .button a {
+  display: block;
+  width: 280px;
+  height: 68px;
+  border: 3px solid #ffffff;
+  line-height: 68px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: Lato;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(33, 18, 33, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+header .header_text .button a:hover {
+  background-color: rgba(33, 18, 33, 0.7);
+  font-size: 19px;
+  transition: all 0.2s ease-in-out;
+}
+
+header .header_text p {
+  margin-top: 40px;
+}
+
+header .header_text p a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.info div {
+  text-align: center;
+}
+
+.info div .info_caption {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  padding-bottom: 10px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info div .info_caption:after {
+  content: "";
+  width: 88px;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -44px;
+}
+
+.info div .info_text {
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.appSection {
+  background-color: #f7f7f7;
+  min-height: 880px;
+}
+
+.appSection .appContent {
+  margin: 0 auto;
+  max-width: 540px;
+  padding: 182px 0 0 640px;
+  position: relative;
+}
+
+.appSection .appContent:before {
+  content: "";
+  background-image: url(../img/appPhone.png);
+  width: 548px;
+  height: 778px;
+  position: absolute;
+  left: -24px;
+  top: 102px;
+}
+
+.appSection .appContent .appContent_caption {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.appSection .appContent .appContent_caption:after {
+  content: "";
+  width: 88px;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.appSection .appContent .appContent_text {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  line-height: 18px;
+  margin-top: 20px;
+  color: #676767;
+}
+
+.appSection .appContent .appContent_text-indent {
+  margin-top: 40px;
+}
+
+.appSection .appContent .appContent_button {
+  display: inline-block;
+  margin-top: 29px;
+}
+
+.review {
+  background-image: url(../img/review_bg.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-color: #4a3949;
+  height: 460px;
+  text-align: center;
+}
+
+.review .review_photo {
+  margin-top: 80px;
+}
+
+.review .review_text, .review .review_author {
+  color: #8f868e;
+  font-weight: 100;
+  margin: 30px auto 0 auto;
+}
+
+.review .review_text {
+  font-size: 28px;
+  max-width: 890px;
+  line-height: 36px;
+}
+
+.review .review_author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.review .slider {
+  margin-top: 38px;
+}
+
+.review .slider .slider_item {
+  display: inline-block;
+}
+
+.review .slider .slider_item .slider_link {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #796d79;
+}
+
+.review .slider .slider_item .slider_link-active {
+  background-color: #ffffff;
+}
+
+.browse .browse_caption {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.browse .browse_caption:after {
+  content: "";
+  width: 88px;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -44px;
+}
+
+.cuisine {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.cuisine .cuisine_list {
+  font-size: 0;
+}
+
+.cuisine .cuisine_list .cuisine_dish {
+  font-size: 0;
+  display: inline-block;
+  width: 20%;
+}
+
+.cuisine .cuisine_list .cuisine_link {
+  display: inline-block;
+}
+
+.cuisine .cuisine_list .cuisine_link img {
+  width: 100%;
+  height: auto;
+}
+
+.browse_count {
+  padding: 60px 0;
+  font-size: 0;
+}
+
+.browse_count .browse_numbers {
+  display: inline-block;
+  font-size: 36px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+  width: 20%;
+}
+
+.browse_count .browse_text {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  font-weight: 300;
+  margin-top: 12px;
+  color: #6b6b6b;
+}
+
+footer {
+  background-color: #f7f7f7;
+}
+
+footer .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 90px;
+}
+
+footer .footer_copyright {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8b8b8b;
+  opacity: 0.5;
+  line-height: 90px;
+}
+
+footer .footer_author {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  color: #8b8b8b;
+  line-height: 90px;
+}
+
+footer .footer_link {
+  font-weight: 400;
+  letter-spacing: 2.8px;
+  color: black;
+  text-decoration: none;
+  line-height: 90px;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    margin-left: 10%;
+  }
+  .reg {
+    margin-right: 10%;
+  }
+  .review .review_text {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .info {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .info .info_container-indent {
+    margin-top: 20px;
+  }
+  .info .info_container .info_text {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .appSection {
+    min-height: auto;
+  }
+  .appSection .appContent {
+    padding: 50px 0;
+  }
+  .appSection .appContent:before {
+    display: none;
+  }
+  .cuisine .cuisine_list {
+    padding: 0 15%;
+  }
+  .cuisine .cuisine_list .cuisine_dish {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .header_text h1 {
+    font-size: 80px;
+  }
+  .browse .browse_caption {
+    margin-top: 50px;
+  }
+  .browse .browse_count {
+    padding: 20px 0;
+  }
+  .browse .browse_count .browse_numbers {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .browse .browse_count .browse_numbers-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+  footer .wrapper {
+    flex-direction: column;
+  }
+}
